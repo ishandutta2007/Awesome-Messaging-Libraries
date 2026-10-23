@@ -5,7 +5,7 @@
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
   <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Messaging-Libraries/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Messaging-Libraries?style=flat-square&logo=github&color=gold" alt="GitHub Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Messaging-Libraries/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Messaging-Libraries?style=flat-square&logo=github&color=gold" alt="GitHub_Stars"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Messaging-Libraries/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Messaging-Libraries?style=flat-square&logo=github&color=blue" alt="GitHub Forks"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Messaging-Libraries/issues"><img src="https://img.shields.io/github/issues/ishandutta2007/Awesome-Messaging-Libraries?style=flat-square&color=orange" alt="GitHub Issues"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Messaging-Libraries/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome"/></a>
@@ -67,9 +67,9 @@ The following table provides detailed pricing, free quotas, and enterprise valua
 
 ## 💻 Open-Source Messaging Libraries & Task Queues
 
-Below is the comprehensive catalog of top open-source messaging libraries, client drivers, and task execution engines. **Entries are strictly ordered in descending order by GitHub Star Count.**
+Below is the comprehensive catalog of top open-source messaging libraries, client drivers, and task execution engines. **Entries are strictly ordered in descending order by GitHub Stars_Count.**
 
-### 1. ⚙️ [Celery](https://github.com/celery/celery) [![GitHub stars](https://img.shields.io/github/stars/celery/celery?style=social&color=white)](https://github.com/celery/celery/stargazers)
+### 1. ⚙️ [Celery](https://github.com/celery/celery) [![GitHub_Stars](https://img.shields.io/github/stars/celery/celery?style=social&color=white)](https://github.com/celery/celery/stargazers)
 - **Protocol / Engine**: Multi-broker via Kombu (AMQP 0-9-1, Redis, Amazon SQS)
 - **License**: BSD-3-Clause
 - **Key Features**:
@@ -83,7 +83,7 @@ Below is the comprehensive catalog of top open-source messaging libraries, clien
 
 ---
 
-### 2. ⚡ [RQ (Redis Queue)](https://github.com/rq/rq) [![GitHub stars](https://img.shields.io/github/stars/rq/rq?style=social&color=white)](https://github.com/rq/rq/stargazers)
+### 2. ⚡ [RQ (Redis Queue)](https://github.com/rq/rq) [![GitHub_Stars](https://img.shields.io/github/stars/rq/rq?style=social&color=white)](https://github.com/rq/rq/stargazers)
 - **Protocol / Engine**: Redis In-Memory Data Structures (Lists, Hashes, Pub/Sub)
 - **License**: BSD-2-Clause
 - **Key Features**:
@@ -95,7 +95,7 @@ Below is the comprehensive catalog of top open-source messaging libraries, clien
 
 ---
 
-### 3. ⏱️ [Huey](https://github.com/coleifer/huey) [![GitHub stars](https://img.shields.io/github/stars/coleifer/huey?style=social&color=white)](https://github.com/coleifer/huey/stargazers)
+### 3. ⏱️ [Huey](https://github.com/coleifer/huey) [![GitHub_Stars](https://img.shields.io/github/stars/coleifer/huey?style=social&color=white)](https://github.com/coleifer/huey/stargazers)
 - **Protocol / Engine**: Redis, SQLite, or In-Memory
 - **License**: MIT
 - **Key Features**:
@@ -106,7 +106,7 @@ Below is the comprehensive catalog of top open-source messaging libraries, clien
 
 ---
 
-### 4. 🌊 [kafka-python](https://github.com/dpkp/kafka-python) [![GitHub stars](https://img.shields.io/github/stars/dpkp/kafka-python?style=social&color=white)](https://github.com/dpkp/kafka-python/stargazers)
+### 4. 🌊 [kafka-python](https://github.com/dpkp/kafka-python) [![GitHub_Stars](https://img.shields.io/github/stars/dpkp/kafka-python?style=social&color=white)](https://github.com/dpkp/kafka-python/stargazers)
 - **Protocol / Engine**: Apache Kafka Binary Protocol
 - **License**: Apache-2.0
 - **Key Features**:
@@ -118,7 +118,7 @@ Below is the comprehensive catalog of top open-source messaging libraries, clien
 
 ---
 
-### 5. 🚀 [FastStream](https://github.com/ag2ai/faststream) [![GitHub stars](https://img.shields.io/github/stars/ag2ai/faststream?style=social&color=white)](https://github.com/ag2ai/faststream/stargazers)
+### 5. 🚀 [FastStream](https://github.com/ag2ai/faststream) [![GitHub_Stars](https://img.shields.io/github/stars/ag2ai/faststream?style=social&color=white)](https://github.com/ag2ai/faststream/stargazers)
 - **Protocol / Engine**: Unified async abstraction over RabbitMQ (AMQP), Apache Kafka, NATS, and Redis
 - **License**: Apache-2.0
 - **Key Features**:
@@ -130,7 +130,7 @@ Below is the comprehensive catalog of top open-source messaging libraries, clien
 
 ---
 
-### 6. 🎭 [Dramatiq](https://github.com/Bogdanp/dramatiq) [![GitHub stars](https://img.shields.io/github/stars/Bogdanp/dramatiq?style=social&color=white)](https://github.com/Bogdanp/dramatiq/stargazers)
+### 6. 🎭 [Dramatiq](https://github.com/Bogdanp/dramatiq) [![GitHub_Stars](https://img.shields.io/github/stars/Bogdanp/dramatiq?style=social&color=white)](https://github.com/Bogdanp/dramatiq/stargazers)
 - **Protocol / Engine**: RabbitMQ (AMQP) and Redis
 - **License**: LGPL-3.0-or-later
 - **Key Features**:
@@ -142,7 +142,7 @@ Below is the comprehensive catalog of top open-source messaging libraries, clien
 
 ---
 
-### 7. 🔌 [PyZMQ](https://github.com/zeromq/pyzmq) [![GitHub stars](https://img.shields.io/github/stars/zeromq/pyzmq?style=social&color=white)](https://github.com/zeromq/pyzmq/stargazers)
+### 7. 🔌 [PyZMQ](https://github.com/zeromq/pyzmq) [![GitHub_Stars](https://img.shields.io/github/stars/zeromq/pyzmq?style=social&color=white)](https://github.com/zeromq/pyzmq/stargazers)
 - **Protocol / Engine**: ZeroMQ (ØMQ) Sockets (TCP, inproc, IPC, PGM multicast)
 - **License**: LGPL-3.0 / BSD-3-Clause
 - **Key Features**:
@@ -155,7 +155,7 @@ Below is the comprehensive catalog of top open-source messaging libraries, clien
 
 ---
 
-### 8. 🐰 [Pika](https://github.com/pika/pika) [![GitHub stars](https://img.shields.io/github/stars/pika/pika?style=social&color=white)](https://github.com/pika/pika/stargazers)
+### 8. 🐰 [Pika](https://github.com/pika/pika) [![GitHub_Stars](https://img.shields.io/github/stars/pika/pika?style=social&color=white)](https://github.com/pika/pika/stargazers)
 - **Protocol / Engine**: AMQP 0-9-1 Protocol
 - **License**: MPL-2.0 / BSD-3-Clause
 - **Key Features**:
@@ -170,7 +170,7 @@ Below is the comprehensive catalog of top open-source messaging libraries, clien
 
 ---
 
-### 9. 🔀 [Kombu](https://github.com/celery/kombu) [![GitHub stars](https://img.shields.io/github/stars/celery/kombu?style=social&color=white)](https://github.com/celery/kombu/stargazers)
+### 9. 🔀 [Kombu](https://github.com/celery/kombu) [![GitHub_Stars](https://img.shields.io/github/stars/celery/kombu?style=social&color=white)](https://github.com/celery/kombu/stargazers)
 - **Protocol / Engine**: Pluggable Transport Abstraction Layer (AMQP via py-amqp, Redis, Amazon SQS, MongoDB, Zookeeper)
 - **License**: BSD-3-Clause
 - **Key Features**:
@@ -183,7 +183,7 @@ Below is the comprehensive catalog of top open-source messaging libraries, clien
 
 ---
 
-### 10. 📡 [Paho MQTT Python](https://github.com/eclipse-paho/paho.mqtt.python) [![GitHub stars](https://img.shields.io/github/stars/eclipse-paho/paho.mqtt.python?style=social&color=white)](https://github.com/eclipse-paho/paho.mqtt.python/stargazers)
+### 10. 📡 [Paho MQTT Python](https://github.com/eclipse-paho/paho.mqtt.python) [![GitHub_Stars](https://img.shields.io/github/stars/eclipse-paho/paho.mqtt.python?style=social&color=white)](https://github.com/eclipse-paho/paho.mqtt.python/stargazers)
 - **Protocol / Engine**: MQTT 3.1, 3.1.1, and MQTT 5.0
 - **License**: EPL-2.0 / BSD-3-Clause
 - **Key Features**:
@@ -195,7 +195,7 @@ Below is the comprehensive catalog of top open-source messaging libraries, clien
 
 ---
 
-### 11. ⚡ [aio-pika](https://github.com/mosquito/aio-pika) [![GitHub stars](https://img.shields.io/github/stars/mosquito/aio-pika?style=social&color=white)](https://github.com/mosquito/aio-pika/stargazers)
+### 11. ⚡ [aio-pika](https://github.com/mosquito/aio-pika) [![GitHub_Stars](https://img.shields.io/github/stars/mosquito/aio-pika?style=social&color=white)](https://github.com/mosquito/aio-pika/stargazers)
 - **Protocol / Engine**: AMQP 0-9-1 (Asyncio Native)
 - **License**: Apache-2.0
 - **Key Features**:
@@ -207,7 +207,7 @@ Below is the comprehensive catalog of top open-source messaging libraries, clien
 
 ---
 
-### 12. 🐘 [Procrastinate](https://github.com/procrastinate-org/procrastinate) [![GitHub stars](https://img.shields.io/github/stars/procrastinate-org/procrastinate?style=social&color=white)](https://github.com/procrastinate-org/procrastinate/stargazers)
+### 12. 🐘 [Procrastinate](https://github.com/procrastinate-org/procrastinate) [![GitHub_Stars](https://img.shields.io/github/stars/procrastinate-org/procrastinate?style=social&color=white)](https://github.com/procrastinate-org/procrastinate/stargazers)
 - **Protocol / Engine**: PostgreSQL (via `LISTEN`/`NOTIFY` and `SELECT ... FOR UPDATE SKIP LOCKED`)
 - **License**: MIT
 - **Key Features**:
@@ -219,7 +219,7 @@ Below is the comprehensive catalog of top open-source messaging libraries, clien
 
 ---
 
-### 13. 🍃 [NATS.py](https://github.com/nats-io/nats.py) [![GitHub stars](https://img.shields.io/github/stars/nats-io/nats.py?style=social&color=white)](https://github.com/nats-io/nats.py/stargazers)
+### 13. 🍃 [NATS.py](https://github.com/nats-io/nats.py) [![GitHub_Stars](https://img.shields.io/github/stars/nats-io/nats.py?style=social&color=white)](https://github.com/nats-io/nats.py/stargazers)
 - **Protocol / Engine**: NATS Core & JetStream Protocol
 - **License**: Apache-2.0
 - **Key Features**:
@@ -231,7 +231,7 @@ Below is the comprehensive catalog of top open-source messaging libraries, clien
 
 ---
 
-### 14. 🏎️ [confluent-kafka-python](https://github.com/confluentinc/confluent-kafka-python) [![GitHub stars](https://img.shields.io/github/stars/confluentinc/confluent-kafka-python?style=social&color=white)](https://github.com/confluentinc/confluent-kafka-python/stargazers)
+### 14. 🏎️ [confluent-kafka-python](https://github.com/confluentinc/confluent-kafka-python) [![GitHub_Stars](https://img.shields.io/github/stars/confluentinc/confluent-kafka-python?style=social&color=white)](https://github.com/confluentinc/confluent-kafka-python/stargazers)
 - **Protocol / Engine**: Apache Kafka (via C-based `librdkafka`)
 - **License**: Apache-2.0
 - **Key Features**:
@@ -243,7 +243,7 @@ Below is the comprehensive catalog of top open-source messaging libraries, clien
 
 ---
 
-### 15. 📬 [stomp.py](https://github.com/jasonrbriggs/stomp.py) [![GitHub stars](https://img.shields.io/github/stars/jasonrbriggs/stomp.py?style=social&color=white)](https://github.com/jasonrbriggs/stomp.py/stargazers)
+### 15. 📬 [stomp.py](https://github.com/jasonrbriggs/stomp.py) [![GitHub_Stars](https://img.shields.io/github/stars/jasonrbriggs/stomp.py?style=social&color=white)](https://github.com/jasonrbriggs/stomp.py/stargazers)
 - **Protocol / Engine**: STOMP Protocol (Simple Text Oriented Messaging Protocol v1.0, v1.1, v1.2)
 - **License**: Apache-2.0
 - **Key Features**:
@@ -254,7 +254,7 @@ Below is the comprehensive catalog of top open-source messaging libraries, clien
 
 ---
 
-### 16. 🧪 [kombu-asyncio](https://github.com/oliverhaas/kombu-asyncio) [![GitHub stars](https://img.shields.io/github/stars/oliverhaas/kombu-asyncio?style=social&color=white)](https://github.com/oliverhaas/kombu-asyncio/stargazers)
+### 16. 🧪 [kombu-asyncio](https://github.com/oliverhaas/kombu-asyncio) [![GitHub_Stars](https://img.shields.io/github/stars/oliverhaas/kombu-asyncio?style=social&color=white)](https://github.com/oliverhaas/kombu-asyncio/stargazers)
 - **Protocol / Engine**: Asynchronous rewrite of Kombu transports (via `aio-pika` & `redis-py` async)
 - **License**: BSD-3-Clause
 - **Key Features**:
@@ -298,7 +298,7 @@ Contributions from the open-source and backend engineering community are warmly 
    git checkout -b feat/add-awesome-library
    ```
 3. **Add or enhance entries** following the established format:
-   - Provide library name, official GitHub repository link, and social star badge.
+   - Provide library name, official GitHub repository link, and social Stars_Badge.
    - For SaaS products, verify specific starting prices and strict free tier limits.
    - Summarize key technical differentiators, supported protocols, and production considerations.
 4. **Run a spell check and link verification**:
