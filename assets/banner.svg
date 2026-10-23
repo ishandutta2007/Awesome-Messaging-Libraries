@@ -1,0 +1,226 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 320" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e1a"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#0a0e17"/>
+    </linearGradient>
+
+    <linearGradient id="primaryGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.7"/>
+      <stop offset="50%" stop-color="#818cf8" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#c084fc" stop-opacity="0.7"/>
+    </linearGradient>
+
+    <radialGradient id="ambientCircle" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Drop Shadows -->
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- CSS Keyframe Animations -->
+    <style>
+      .message-track {
+        stroke-dasharray: 8, 12;
+        animation: flowDash 20s linear infinite;
+      }
+      .message-packet {
+        animation: packetMove 6s ease-in-out infinite;
+      }
+      .message-packet-reverse {
+        animation: packetMoveReverse 7s ease-in-out infinite;
+      }
+      .pulse-node {
+        animation: pulseRing 3s ease-out infinite;
+        transform-origin: center;
+      }
+      .float-pill {
+        animation: subtleFloat 4s ease-in-out infinite alternate;
+      }
+
+      @keyframes flowDash {
+        from { stroke-dashoffset: 400; }
+        to { stroke-dashoffset: 0; }
+      }
+
+      @keyframes packetMove {
+        0% { transform: translateX(0); opacity: 0; }
+        15% { opacity: 0.9; }
+        85% { opacity: 0.9; }
+        100% { transform: translateX(480px); opacity: 0; }
+      }
+
+      @keyframes packetMoveReverse {
+        0% { transform: translateX(0); opacity: 0; }
+        15% { opacity: 0.85; }
+        85% { opacity: 0.85; }
+        100% { transform: translateX(-480px); opacity: 0; }
+      }
+
+      @keyframes pulseRing {
+        0% { r: 6px; opacity: 0.9; }
+        50% { r: 12px; opacity: 0.3; }
+        100% { r: 18px; opacity: 0; }
+      }
+
+      @keyframes subtleFloat {
+        0% { transform: translateY(0px); }
+        100% { transform: translateY(-4px); }
+      }
+
+      .text-title {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 800;
+        letter-spacing: -0.5px;
+      }
+      .text-sub {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 500;
+      }
+      .text-pill {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+        font-weight: 600;
+        font-size: 11px;
+      }
+    </style>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="960" height="320" rx="16" fill="url(#bgGradient)"/>
+  <rect width="960" height="320" rx="16" fill="none" stroke="#1e293b" stroke-width="1.5"/>
+
+  <!-- Ambient Glow Behind Center -->
+  <circle cx="480" cy="160" r="260" fill="url(#ambientCircle)"/>
+
+  <!-- Background Decorative Grid Lines -->
+  <g stroke="#334155" stroke-opacity="0.15" stroke-width="1">
+    <line x1="80" y1="0" x2="80" y2="320"/>
+    <line x1="200" y1="0" x2="200" y2="320"/>
+    <line x1="320" y1="0" x2="320" y2="320"/>
+    <line x1="640" y1="0" x2="640" y2="320"/>
+    <line x1="760" y1="0" x2="760" y2="320"/>
+    <line x1="880" y1="0" x2="880" y2="320"/>
+    <line x1="0" y1="60" x2="960" y2="60"/>
+    <line x1="0" y1="260" x2="960" y2="260"/>
+  </g>
+
+  <!-- Animated Data Highway Lines (Top & Bottom Tracks) -->
+  <g fill="none">
+    <!-- Top Track -->
+    <path class="message-track" d="M 40 45 L 920 45" stroke="#38bdf8" stroke-width="1.5" stroke-opacity="0.35"/>
+    <!-- Bottom Track -->
+    <path class="message-track" d="M 920 275 L 40 275" stroke="#a855f7" stroke-width="1.5" stroke-opacity="0.35"/>
+  </g>
+
+  <!-- Animated Moving Message Packets -->
+  <!-- Top Packets flowing Right -->
+  <g fill="#38bdf8" filter="url(#glow)">
+    <g class="message-packet">
+      <circle cx="100" cy="45" r="4.5"/>
+    </g>
+    <g class="message-packet" style="animation-delay: -3s;">
+      <circle cx="100" cy="45" r="3.5" fill="#818cf8"/>
+    </g>
+  </g>
+
+  <!-- Bottom Packets flowing Left -->
+  <g fill="#c084fc" filter="url(#glow)">
+    <g class="message-packet-reverse">
+      <circle cx="860" cy="275" r="4.5"/>
+    </g>
+    <g class="message-packet-reverse" style="animation-delay: -3.5s;">
+      <circle cx="860" cy="275" r="3.5" fill="#38bdf8"/>
+    </g>
+  </g>
+
+  <!-- Broker & Queue Hub Nodes on Flanks -->
+  <!-- Left Hub: Producer Cluster -->
+  <g transform="translate(60, 160)">
+    <circle cx="0" cy="0" r="14" fill="#0f172a" stroke="#38bdf8" stroke-width="2"/>
+    <circle class="pulse-node" cx="0" cy="0" r="6" fill="none" stroke="#38bdf8" stroke-width="1.5"/>
+    <circle cx="0" cy="0" r="5" fill="#38bdf8"/>
+    <text x="0" y="28" fill="#64748b" text-anchor="middle" class="text-pill" font-size="9">PRODUCER</text>
+  </g>
+
+  <!-- Right Hub: Consumer Cluster -->
+  <g transform="translate(900, 160)">
+    <circle cx="0" cy="0" r="14" fill="#0f172a" stroke="#a855f7" stroke-width="2"/>
+    <circle class="pulse-node" cx="0" cy="0" r="6" fill="none" stroke="#a855f7" stroke-width="1.5"/>
+    <circle cx="0" cy="0" r="5" fill="#a855f7"/>
+    <text x="0" y="28" fill="#64748b" text-anchor="middle" class="text-pill" font-size="9">CONSUMER</text>
+  </g>
+
+  <!-- Connector Lines from Flank Hubs towards Center -->
+  <path d="M 75 160 Q 140 160 160 160" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="4,4" stroke-opacity="0.4" fill="none"/>
+  <path d="M 885 160 Q 820 160 800 160" stroke="#a855f7" stroke-width="1.5" stroke-dasharray="4,4" stroke-opacity="0.4" fill="none"/>
+
+  <!-- ================= FOREGROUND CARD (Fixed, High Contrast, Always Visible) ================= -->
+  <g transform="translate(140, 48)" filter="url(#cardShadow)">
+    <!-- Backdrop Card -->
+    <rect width="680" height="224" rx="16" fill="#0b1120" fill-opacity="0.9" stroke="#334155" stroke-width="1.5"/>
+    <rect width="680" height="224" rx="16" fill="none" stroke="url(#primaryGlow)" stroke-width="1" stroke-opacity="0.4"/>
+
+    <!-- Top Badge Pill -->
+    <g transform="translate(240, 22)">
+      <rect width="200" height="24" rx="12" fill="#1e293b" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.5"/>
+      <circle cx="14" cy="12" r="3.5" fill="#10b981"/>
+      <text x="107" y="16" fill="#93c5fd" text-anchor="middle" class="text-pill">ENTERPRISE MESSAGING</text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="340" y="86" text-anchor="middle" class="text-title" font-size="34" fill="#ffffff">
+      Awesome Messaging Libraries
+    </text>
+
+    <!-- Subtitle -->
+    <text x="340" y="118" text-anchor="middle" class="text-sub" font-size="14" fill="#94a3b8">
+      Curated AMQP Clients • Distributed Task Queues • Event Streams &amp; Transports
+    </text>
+
+    <!-- Subtle Divider -->
+    <line x1="80" y1="140" x2="600" y2="140" stroke="#334155" stroke-width="1" stroke-opacity="0.6"/>
+
+    <!-- Ecosystem Feature Pills (Centered Foreground) -->
+    <g transform="translate(50, 158)">
+      <!-- Pill 1: AMQP / RabbitMQ -->
+      <g transform="translate(0, 0)">
+        <rect width="130" height="28" rx="6" fill="#1e293b" stroke="#f97316" stroke-width="1" stroke-opacity="0.5"/>
+        <text x="65" y="18" text-anchor="middle" fill="#fdba74" class="text-pill">🐰 AMQP / RabbitMQ</text>
+      </g>
+      <!-- Pill 2: Celery / Task Queues -->
+      <g transform="translate(142, 0)">
+        <rect width="136" height="28" rx="6" fill="#1e293b" stroke="#10b981" stroke-width="1" stroke-opacity="0.5"/>
+        <text x="68" y="18" text-anchor="middle" fill="#6ee7b7" class="text-pill">⚙️ Celery &amp; Task Queues</text>
+      </g>
+      <!-- Pill 3: Kafka & Streaming -->
+      <g transform="translate(290, 0)">
+        <rect width="142" height="28" rx="6" fill="#1e293b" stroke="#06b6d4" stroke-width="1" stroke-opacity="0.5"/>
+        <text x="71" y="18" text-anchor="middle" fill="#67e8f9" class="text-pill">🌊 Kafka &amp; Streaming</text>
+      </g>
+      <!-- Pill 4: Redis & In-Memory -->
+      <g transform="translate(444, 0)">
+        <rect width="134" height="28" rx="6" fill="#1e293b" stroke="#ef4444" stroke-width="1" stroke-opacity="0.5"/>
+        <text x="67" y="18" text-anchor="middle" fill="#fca5a5" class="text-pill">⚡ Redis &amp; In-Memory</text>
+      </g>
+    </g>
+
+    <!-- Bottom Metric / Tech Specs Bar -->
+    <g transform="translate(0, 198)">
+      <text x="340" y="14" text-anchor="middle" class="text-pill" font-size="10" fill="#64748b">
+        PYTHON CLIENTS • HIGH-THROUGHPUT CONSUMERS • FAULT-TOLERANT RETRIES • MULTI-BROKER ABSTRACTIONS
+      </text>
+    </g>
+  </g>
+</svg>
