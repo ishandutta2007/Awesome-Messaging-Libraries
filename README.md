@@ -1,6 +1,6 @@
 # Awesome-Messaging-Libraries
 
-# Top Messaging Libraries Ecosystem
+## Top Messaging Libraries Ecosystem
 
 **Curated List of SaaS Products & Open-Source GitHub Projects**  
 *Focused on AMQP Protocol Clients, Multi-Transport Abstraction & Task Queue Integration*  
